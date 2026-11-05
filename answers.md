@@ -5,7 +5,7 @@ Docker creates two separate containers from the same image. Each has its own ID,
 
 ## What happens to files created inside a container when it stops?
 
-They stay in the stopped container and are still there if I restart it with `docker start`. They are permanently deleted when I remove the container with `docker rm`, unless they are saved in a volume. A new container from the same image won't have them. For example, `requests` is installed only in the Python container I used, not in the `python:3.11-slim` image.
+The files stay in the stopped container and are still there if I restart it with `docker start`. They are permanently deleted when I remove the container with `docker rm`, unless they are saved in a volume. A new container from the same image won't have them. For example, `requests` is installed only in the Python container I used, not in the `python:3.11-slim` image.
 
 ## How is the -p flag used to map ports?
 
